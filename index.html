@@ -3,53 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>Creative Vision 24/7</title>
+
+  <!-- FAVICON -->
+  <link rel="icon" href="images/logo.png">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <div class="logo">CREATIVE <span>VISION 24/7</span></div>
-  <button class="live-btn">🔴 LIVE TV</button>
+<header class="topbar">
+  <div class="logo">
+    <img src="images/logo.png" alt="logo">
+    <h1>Creative <span>Vision 24/7</span></h1>
+  </div>
+
+  <a href="https://facebook.com" target="_blank" class="fb-btn">Facebook</a>
 </header>
 
 <nav>
   <ul>
-    <li>Home</li>
-    <li>Live TV</li>
-    <li>National</li>
-    <li>International</li>
-    <li>Politics</li>
-    <li>Entertainment</li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">Live TV</a></li>
+    <li><a href="#">National</a></li>
+    <li><a href="#">International</a></li>
+    <li><a href="#">Politics</a></li>
+    <li><a href="#">Entertainment</a></li>
+    <li><a href="about.html">About Us</a></li>
   </ul>
 </nav>
 
 <section class="breaking">
-  <marquee>🔥 ব্রেকিং নিউজ: আজকের সব গুরুত্বপূর্ণ খবর এখানে দেখুন...</marquee>
+  <marquee>🔥 Breaking News: সর্বশেষ খবর এখানে দেখুন</marquee>
 </section>
 
-<section class="main">
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/live_stream?channel=UC4R8DWoMoI7CAwX8_LjQHig" allowfullscreen></iframe>
-  </div>
-
-  <div class="sidebar">
-    <h3>Breaking News</h3>
-    <ul>
-      <li>রাজনীতিতে নতুন আপডেট</li>
-      <li>আন্তর্জাতিক বড় ঘটনা</li>
-      <li>অপরাধ সংক্রান্ত খবর</li>
-    </ul>
+<section class="hero">
+  <div class="overlay">
+    <h2>দেশের সর্বশেষ খবর সরাসরি দেখুন</h2>
+    <button onclick="watchLive()">LIVE TV দেখুন</button>
   </div>
 </section>
 
-<section class="news">
-  <h2>Latest News</h2>
-  <div class="cards">
-    <div class="card">News 1</div>
-    <div class="card">News 2</div>
-    <div class="card">News 3</div>
-  </div>
+<section class="grid">
+  <div class="card">Latest News</div>
+  <div class="card">Talk Show</div>
+  <div class="card">Entertainment</div>
 </section>
 
 <footer>
