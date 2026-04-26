@@ -1,35 +1,47 @@
 body {
   margin: 0;
   font-family: Arial;
-  background: #111;
-  color: #fff;
+  background: #0b0b0b;
+  color: white;
 }
 
-header {
+.topbar {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  align-items: center;
+  padding: 10px;
   background: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 10px;
 }
 
 .logo span {
   color: red;
 }
 
-.live-btn {
-  background: red;
+.fb-btn {
+  background: #1877f2;
+  padding: 8px 15px;
   color: white;
-  border: none;
-  padding: 10px;
+  text-decoration: none;
 }
 
 nav {
-  background: #222;
+  background: #111;
 }
 
 nav ul {
   display: flex;
   list-style: none;
+  margin: 0;
   padding: 10px;
 }
 
@@ -37,37 +49,43 @@ nav li {
   margin-right: 20px;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
 .breaking {
   background: red;
-  padding: 10px;
+  padding: 8px;
 }
 
-.main {
-  display: flex;
-  padding: 20px;
-}
-
-.video iframe {
-  width: 70%;
+.hero {
   height: 400px;
+  background: url('https://i.imgur.com/8Km9tLL.jpg') center/cover;
+  position: relative;
 }
 
-.sidebar {
-  width: 30%;
-  padding-left: 20px;
+.overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
 }
 
-.news {
-  padding: 20px;
+button {
+  background: red;
+  border: none;
+  padding: 10px 20px;
+  color: white;
 }
 
-.cards {
+.grid {
   display: flex;
+  padding: 20px;
 }
 
 .card {
   background: #222;
-  padding: 20px;
   margin: 10px;
+  padding: 20px;
   flex: 1;
 }
